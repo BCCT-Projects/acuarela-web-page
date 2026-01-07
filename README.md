@@ -70,89 +70,6 @@ O usa el script incluido:
 ./rebuild-docker.sh
 ```
 
-### Ejecutar Comandos Dentro del Contenedor
-
-```bash
-# Abrir bash en el contenedor
-docker-compose exec acuarela-web bash
-
-# Ver archivos CSS
-docker-compose exec acuarela-web ls -la /var/www/html/css/
-
-# Ver logs de Apache
-docker-compose exec acuarela-web cat /var/log/apache2/error.log
-```
-
-### Verificar Permisos de Archivos
-
-```bash
-docker-compose exec acuarela-web ls -la /var/www/html/
-```
-
-## 🌐 URLs
-
-- **Producción:** https://acuarela.app/
-- **Local:** http://localhost:8080
-- **API WordPress:** https://acuarelaadmin.acuarela.app/wp-json/wp/v2/
-
-## 📁 Estructura Principal
-
-```
-acuarela-web-page/
-├── Dockerfile              # Configuración Docker
-├── docker-compose.yml      # Orquestación del contenedor
-├── apache-config.conf      # Configuración Apache
-├── .htaccess              # URLs amigables
-├── css/                   # Estilos
-├── js/                    # Scripts
-├── img/                   # Imágenes
-├── includes/              # PHP incluidos (config, functions, header, footer)
-├── get/                   # APIs GET
-├── set/                   # APIs POST
-└── index.php              # Página principal
-```
-
-## 🔄 Sincronización con Producción
-
-El sitio obtiene contenido dinámico de WordPress en:
-- **URL:** https://acuarelaadmin.acuarela.app
-- **API:** /wp-json/wp/v2/
-
-Para actualizar el CSS local desde producción:
-```powershell
-# PowerShell
-Invoke-WebRequest -Uri "https://acuarela.app/css/styles.css" -UseBasicParsing -OutFile "css/styles.css"
-docker-compose restart acuarela-web
-```
-
-```bash
-# Linux/Mac
-curl -o css/styles.css https://acuarela.app/css/styles.css
-docker-compose restart acuarela-web
-```
-
-## 🛠️ Configuración de Apache
-
-El archivo `apache-config.conf` incluye:
-- Configuración de tipos MIME para CSS, JS y fuentes
-- Headers de seguridad (X-Content-Type-Options)
-- Cache control optimizado
-- Soporte para URLs amigables vía `.htaccess`
-
-## 📝 Desarrollo
-
-### Modificar Archivos
-
-Los archivos son montados como volumen, por lo que cualquier cambio en tu editor se refleja inmediatamente en el contenedor. Solo necesitas recargar el navegador.
-
-### Deshabilitar Caché para Desarrollo
-
-En `docker-compose.yml`, el volumen usa `:cached` para mejor rendimiento:
-```yaml
-volumes:
-  - .:/var/www/html:cached
-```
-
 ### Variables de Entorno
 
 Puedes agregar variables de entorno en `docker-compose.yml`:
@@ -162,11 +79,6 @@ environment:
   - APACHE_LOG_LEVEL=debug
 ```
 
-## 📞 Soporte
-
-Para problemas o preguntas:
-- Email: info@acuarela.app
-- Sitio: https://acuarela.app
 
 ## 📄 Licencia
 
@@ -175,14 +87,6 @@ l CMS WordPress:
 ```
 https://acuarelaadmin.acuarela.app/wp-json/wp/v2/
 ```
-
-Para actualizar archivos desde producción:
-```powershell
-# Descargar CSS actualizado
-Invoke-WebRequest -Uri "https://acuarela.app/css/styles.css" -UseBasicParsing -OutFile "css/styles.css"
-docker-compose restart acuarela-web
-```
-
 ## 📝 Notas de Desarrollo
 
 - Los archivos son montados como volumen (hot-reload automático)
