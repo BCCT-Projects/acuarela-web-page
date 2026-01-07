@@ -1,0 +1,33 @@
+# Docker Compose para Acuarela Web Page
+# Ejecutar: docker-compose up -d
+
+version: '3.8'
+
+services:
+  acuarela-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: acuarela-web
+    ports:
+      - "8080:80"
+    volumes:
+      # Montar el código para desarrollo en tiempo real
+      - .:/var/www/html:cached
+      # Persistir sesiones PHP
+      - php_sessions:/tmp
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data
+    restart: unless-stopped
+    networks:
+      - acuarela-network
+
+networks:
+  acuarela-network:
+    driver: bridge
+
+volumes:
+  php_sessions:
+

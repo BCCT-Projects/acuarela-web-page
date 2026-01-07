@@ -1,0 +1,30 @@
+# Ignorar archivos de Git
+.git
+.gitignore
+
+# Ignorar archivos de Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Ignorar archivos de desarrollo
+*.log
+error_log
+.DS_Store
+Thumbs.db
+
+# Ignorar carpetas vacías innecesarias
+bluecard/
+modo-inspeccion/
+
+# Ignorar archivos de editor
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Ignorar node_modules si existe
+node_modules/
+
+

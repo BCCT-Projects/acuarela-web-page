@@ -1,0 +1,653 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/favicon.ico"/>
+    <title>Acuarela | Home</title>
+    <meta name="facebook-domain-verification" content="lth8med3qtj6lk9akuvgnovn4u6ysj" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="fonts/acuarelaicon/style.css" />
+    <link rel="stylesheet" href="css/styles.css?v=1767810787" />
+    <link rel="stylesheet" type="text/css" href="./css/glider.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SD09S4QRP5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SD09S4QRP5');
+</script>
+
+</head>
+
+<body>
+    <!--Facebook pixel code-->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '924895545109881');
+      fbq('track', 'PageView');
+    </script>
+      <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=924895545109881&ev=PageView&noscript=1"/></noscript>
+      <!-- End Facebook Pixel Code --><header class="header container__home">
+      <a href="/">
+        <img class="header__logo" src="img/logo_w.svg" alt="Acuarela" />
+      </a>
+      <img
+        class="header__toggle"
+        src="img/menu.svg"
+        alt="Acuarela"
+        onclick="toggleTarget('mobile-menu')"
+      />
+      <nav class="header__menu">
+        <a class="header__menu-item" href="/#top">Home</a>
+        <!-- <a class="header__menu-item" href="sobre-nosotros">Nosotros</a> -->
+        <a class="header__menu-item" href="/#nosotros">Nosotros</a>
+        <a class="header__menu-item" href="planes-precios">Planes y Precios</a>
+        <a class="header__menu-item" href="/#faq">Preguntas Frecuentes</a>
+      </nav>
+
+      <div class="header__user">
+        <!-- <a class="header__user-notification" href="#">
+          <img class="header__notification" src="img/Notificaciones.svg" alt="Acuarela" />
+          Notificaciones
+        </a> -->
+        <!-- <a class="header__menu-item invitation" href="https://bilingualchildcaretraining.com/miembros/crear-cuenta">
+          <img class="header__logging" src="img/cerrarsesion.svg" alt="Acuarela" />
+        </a> -->
+        <a class="btn btn--primarywhite" target="_blank"
+          href="https://bilingualchildcaretraining.com/miembros/?service=acuarela&redirect_url=%2Fmiembros%2Facuarela-app-web%2Fs%2FdaycareActive%2F%3Fdaycare%3D">
+          Iniciar sesión
+        </a>
+        <a class="btn btn--primarywhite" target="_blank"
+          href="https://acuarela.app/planes-precios">
+          Crear cuenta
+        </a>
+        <!-- <a class="header__menu-item invitation" href="https://bilingualchildcaretraining.com/miembros/crear-cuenta">Crea tu cuenta gratis</a>  -->
+      </div>
+
+      <!--<div class="header__actions">
+                <div class="lang-selector">
+                    <label for="lang-select">
+                        <img
+                            class="lang-selector__flag"
+                            src="img/flag_es.svg"
+                        />
+                    </label>
+                    <select
+                        name="lang-select"
+                        id="lang-select"
+                        class="lang-selector__select"
+                    >
+                        <option value="ES">ES</option>
+                        <option value="EN">EN</option>
+                    </select>
+                    <label for="lang-select">
+                        <i class="icon-arrow-down"></i>
+                    </label>
+                </div>
+                <button
+                    class="btn btn--transparent btn--transparent-border btn--sm"
+                >
+                    <span class="btn__text">Inicia Sesión</span>
+                </button>
+                <button class="btn btn--primary btn--sm">
+                    <span class="btn__text">Regístrate</span>
+                </button>
+            </div>!-->
+    </header>
+    <div class="mobile-menu" data-toggle="mobile-menu">
+      <div class="mobile-menu__header">
+        <img class="header__logo" src="img/logo.svg" alt="Acuarela" />
+        <i
+          class="header__toggle icon-cross"
+          onclick="toggleTarget('mobile-menu')"
+        ></i>
+      </div>
+      <div class="mobile-menu__body">
+        <nav class="mobile-menu__menu">
+          <a class="mobile-menu__menu-item" href="#top">Home</a>
+          <a class="mobile-menu__menu-item" href="sobre-nosotros">Nosotros</a>
+          <a class="mobile-menu__menu-item" href="planes-precios">Planes y Precios</a>
+          <a class="mobile-menu__menu-item" href="preguntas-frecuentes">Preguntas Frecuentes</a>
+          <a class="header__menu-item invitation" href="https://bilingualchildcaretraining.com/miembros/?service=acuarela&redirect_url=/miembros/acuarela-app-web/s/daycareActive/?daycare=">Iniciar Sesión</a>
+        </nav>
+        <!--<div class="mobile-menu__actions">
+          <div class="lang-selector">
+            <label for="lang-select">
+              <img class="lang-selector__flag" src="img/flag_es.svg" />
+            </label>
+            <select
+              name="lang-select"
+              id="lang-select"
+              class="lang-selector__select"
+            >
+              <option value="ES">ESPAÑOL</option>
+              <option value="EN">ENGLISH</option>
+            </select>
+            <label for="lang-select">
+              <i class="icon-arrow-down"></i>
+            </label>
+          </div>
+          <button class="btn btn--transparent btn--transparent-border btn--sm">
+            <span class="btn__text">Inicia Sesión</span>
+          </button>
+          <button class="btn btn--primary btn--sm">
+            <span class="btn__text">Regístrate</span>
+          </button>
+        </div>!-->
+      </div>
+    </div>
+<main class="containerheader">
+  <!-- BANNER -->
+  <section class="banner">
+    <h1 class="banner__title">
+      Administra <strong class="banner__title-strong">Tu Daycare Digitalmente</strong> Y Haz Crecer Tu Negocio.
+    </h1>
+
+    <div class="banner__content">
+      <div class="banner__media">
+        <div class="video-container">
+          <button type="button" onclick="unMutedVideo()" id="unmutedBtn"><img src="img/volOff.svg" alt="unmuted" /></button>
+          <video id="video1" src="https://acuarelaadmin.acuarela.app/wp-content/uploads/2023/02/Acuarela_Promo_v2.mp4" playsinline preload="auto" autoplay muted loop>
+            <source src="https://acuarelaadmin.acuarela.app/wp-content/uploads/2023/02/Acuarela_Promo_v2.mp4" type="video/mp4">  
+          </video>
+        </div>
+        <div class="pink-square">
+          <img class="video__logo" src="img/Logo_AC.png" alt="Acuarela" />
+        </div>
+      </div>
+
+      <div class="banner__content-info">
+        <h2 class="banner__subtitle">
+          Convierte el servicio de tu daycare en una experiencia 10/10 con la
+          familia de herramientas digitales Acuarela.
+        </h2>
+        <div class="banner__buttons">
+          <a class="btn btn--primarywhite" href="https://acuarela.app/planes-precios">
+            Crea una cuenta gratis
+          </a>
+          <button class="btn btn--secondary openModalBtn" >
+            Obtener un DEMO
+          </button>
+          <div id="modalOverlay" class="modal-overlay hidden">
+            <div class="modal-box">
+              <img src="img/Cerrar.svg" alt="Cerrar" id="closeModalBtn" class="close-btn" />
+              <div class="modal-inner">
+                <div class="modal-left">
+                  <h3>¡Empieza ahora!</h3>
+                  <form id="demoForm" class="modal-form">
+                    <input type="text" id="nameInput" name="nombre" placeholder="Nombre" required />
+                    <input type="text" id="lastnameInput" name="apellidos" placeholder="Apellidos" required />
+                    <input type="email" id="emailInput" name="email" placeholder="Email" required />
+                    <input type="text" id="daycareInput" name="daycare" placeholder="Daycare" required />
+                    <input type="number" name="num_ninos" placeholder="Número de niños" required />
+                    <!-- Aquí se inserta el reCAPTCHA de Google -->
+                    <!-- <div class="recaptcha-container">
+                      <span>
+                        <div class="g-recaptcha" data-sitekey="6Lf2KDArAAAAAJ0pKA3IgyQatVKx07cOB-Jjt1DE"></div>
+                      </span>
+                    </div> -->
+                    <button type="submit" id="submitBtn" class="submit-btn">
+                      Recibir <span class="bold-text">DEMO</span>
+                    </button>
+                  </form>
+                </div>
+                <div class="modal-right">
+                  <div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <img src="img/logo_w.svg" alt="Logo Acuarela" />
+                  </div>          
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </section>
+
+  <!-- CLIENTES -->
+  <!-- <section class="clientes__daycares">
+    <p class="clientes-title">Con la confianza de</p>
+    <img class="logos-daycares" src="img/daycares/GummyBear.png" alt="Acuarela" />
+    <img class="logos-daycares" src="img/daycares/JyN.png" alt="Acuarela" />
+    <img class="logos-daycares" src="img/daycares/LittleGenius.png" alt="Acuarela" />
+    <img class="logos-daycares" src="img/daycares/ManitasFuturo.png" alt="Acuarela" />
+    <img class="logos-daycares" src="img/daycares/Nuri.png" alt="Acuarela" />
+    <img class="logos-daycares" src="img/daycares/RaisingStars.png" alt="Acuarela" />
+  </section> -->
+
+  <!-- FEATURES -->
+   <section class="featurespr">
+    <div class="features-boxpurple"></div>
+    <div class="features-boxmenta"></div>
+    <div class="features-boxpollito"></div>
+    <div class="features-boxsandia"></div>
+    <div class="features-inner">
+      <div class="features-parttitle">
+        <h2 class="features__title">Un Daycare 10/10 es capaz de:</h2>
+        <button class="btn btn--secondary openModalBtn">
+          Obtener un DEMO
+        </button>
+      </div>
+      <div class="features-cont">
+        <div class="features-cont__feature-feature subs1">
+          <div class="feature__image img1">
+            <img class="img-feature" src="img/feature-1white.svg" alt="Comunicarse fácilmente con personal y padres de familia" />
+          </div>
+          <h3 class="feature-titleinfo">Comunicarse fácilmente con personal y padres de familia...</h3>
+          <p class="feature-textinfo">
+            Ahora la mensajería instantánea, las notificaciones masivas y el muro
+            social son parte de un gran servicio. Acuarela te acerca a tus
+            asistentes y clientes a un toque de tu tablet preferida.
+          </p>
+        </div>
+        <div class="features-cont__feature-feature subs2">
+          <div class="feature__image img2">
+            <img class="img-feature" src="img/feature-2white.svg" alt="Conseguir nuevos clientes" />
+          </div>
+          <h3 class="feature-titleinfo">Conseguir nuevos clientes</h3>
+          <p class="feature-textinfo">
+            La red de Daycares Acuarela pone tu negocio en el mapa, permitiendo
+            que padres de familia en tu área conozcan tu daycare, instalaciones y
+            mucho más.
+          </p>
+        </div>
+        <div class="features-cont__feature-feature subs3">
+          <div class="feature__image img3">
+            <img class="img-feature" src="img/feature-3white.svg" alt="Usar nuevas formas de brindar seguridad" />
+          </div>
+          <h3 class="feature-titleinfo">Usar nuevas formas de brindar seguridad</h3>
+          <p class="feature-textinfo">
+            A manera de red social, Acuarela te permite hacer publicaciones para
+            los padres de familia de los niños que cuidas a diario, esto ayuda a
+            fortalecer relaciones con ellos y brindar seguridad mientras están en
+            sus labores cotidianas.
+        </p>
+        </div>
+        <div class="features-cont__feature-feature subs4">
+          <div class="feature__image img4">
+            <img class="img-feature" src="img/feature-4white.svg" alt="Gestionar sus finanzas en tiempo récord" />
+          </div>
+          <h3 class="feature-titleinfo">Gestionar sus finanzas en tiempo récord</h3>
+          <p class="feature-textinfo">
+            Obtén pagos automatizados vía PayPal, lleva control de Payrolls y
+            obtén reportes del estado financiero de tu Daycare en pocos pasos, las
+            24 horas del día, los 7 días de la semana.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ADD-ONS -->
+  <section class="add__ons" id="nosotros">
+    <div class="add__ons__content">
+      <img class="adds-image" src="img/add-on1.png" alt="Cobros automáticos y Payrolls fáciles" />
+     
+      <div class="adds-content">
+        <div class="adds-content-page type1">
+          <div class="page-title">
+            <h4>Finanzas</h4>
+          </div>
+          <div class="page-line tipe1"></div>
+          <div class="page-imagebox box1">
+            <img src="img/feature-4white.svg" alt="Gestionar sus finanzas en tiempo récord" />
+          </div>
+        </div>
+
+        <div class="adds-content-info pri">
+          <h3 class="adds-info-title">Cobros automáticos y Payrolls fáciles...</h3>
+          <p class="adds-info-text">
+            Nuestro sistema de pagos automáticos está listo para facilitar los cobros semanales de tu 
+            servicio a los padres de familia que son parte de tu Daycare, además, Acuarela te permite hacer 
+            gestión de tus gastos diarios y el pago periódico a los asistentes que te ayudan con el cuidado 
+            de niños en tu negocio.
+          </p>
+          <button
+            class="btn btn--secondary"
+            onclick="window.location.href='https://acuarela.app/planes-precios'"
+          >
+            Ver planes y precios
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="add__ons__content">     
+      <div class="adds-content">
+        <div class="adds-content-page type2">
+          <div class="page-imagebox box2">
+            <img src="img/feature-2white.svg" alt="Conseguir nuevos clientes" />
+          </div>
+          <div class="page-line tipe2"></div>
+          <div class="page-title">
+            <h4>Mensajería</h4>
+          </div>
+        </div>
+
+        <div class="adds-content-info sec">
+          <h3 class="adds-info-title">Llega a más clientes sin más esfuerzo...</h3>
+          <p class="adds-info-text">
+            Los daycares que usan Acuarela , son parte de nuestra red de Daycares, en la cual padres de 
+            familia de tu región pueden conocer tu servicio, instalaciones y atractivos. Esta red no tiene 
+            costo adicional y se convertirá en una importante fuente de clientes potenciales para que hagas 
+            crecer tu negocio desde el día uno.
+          </p>
+          <button
+            class="btn btn--secondary"
+            onclick="window.location.href='https://acuarela.app/planes-precios'"
+          >
+            Ver planes y precios
+          </button>
+        </div>
+      </div>
+
+      <img class="adds-image" src="img/add-on2.png" alt="Llega a más clientes sin más esfuerzo" />
+    </div>
+
+    <div class="add__ons__content">
+      <img class="adds-image" src="img/add-on3.png" alt="Funciones que te permiten dedicar más tiempo a cuidar y menos a administrar…" />
+     
+      <div class="adds-content">
+        <div class="adds-content-page type1">
+          <div class="page-title">
+            <h4>Gestión</h4>
+          </div>
+          <div class="page-line tipe1"></div>
+          <div class="page-imagebox box3">
+            <img src="img/feature-5white.svg" alt="Gestión" />
+          </div>
+        </div>
+
+        <div class="adds-content-info pri">
+          <h3 class="adds-info-title">Funciones que te permiten dedicar más tiempo a cuidar y menos a administrar…...</h3>
+          <p class="adds-info-text">
+            El control de eventos, contratos, documentación, asistentes, fichas de salud, gestión de ingresos / gastos, 
+            entre otras 40 funciones de administración, te permitirán tener control de tu daycare fácilmente, y 
+            dedicarte la mayoría de tu tiempo al cuidado del futuro del mundo: los niños.
+            Con una inversión mínima y pocos conocimientos de internet, tendrás al alcance de tu tablet un 
+            sinnúmero de herramientas que llevarán tu Daycare a otro nivel.
+          </p>
+          <button
+            class="btn btn--secondary"
+            onclick="window.location.href='https://acuarela.app/planes-precios'"
+          >
+            Ver planes y precios
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonial__section">
+    <div class="testimonial">
+      <h2>Testimonios</h2>
+      <div class="testimonial__content">
+        <img src="img\Flecha_izquierda.png" alt="Desplazar testimonios a la izquierda" />
+
+        <div class="testimonial__content-view">
+          <div class="testimonial__slider-track">
+                        <div class="testimonial__slide">
+              <div class="testimonial__content-video">
+                <img class="testimonials-cont__avatar" src=""/>
+              </div>
+
+              <div class="testimonial__content-info">
+                <div class="imgbox">
+                  <img src="img\Heart.svg" alt="Like" />
+                </div>
+                <h3>Ana de Lovely Center Daycare</h3>
+                <h4>Proveedora de cuidado infantil</h4>
+                <p><p class="testimonials-cont__message">“Cuidar el medio ambiente es una de las cosas que más amo enseñarle a los niños de mi Daycare. Con Acuarela App.</p>
+<p>ahora podré también reducir el uso de papel en la gestión de mi negocio.”</p>
+</p>
+              </div>
+            </div>
+                        <div class="testimonial__slide">
+              <div class="testimonial__content-video">
+                <img class="testimonials-cont__avatar" src=""/>
+              </div>
+
+              <div class="testimonial__content-info">
+                <div class="imgbox">
+                  <img src="img\Heart.svg" alt="Like" />
+                </div>
+                <h3>Isabel de NWest Childcare</h3>
+                <h4>Proveedora de cuidado infantil</h4>
+                <p><p>“Siempre he tenido inconvenientes con que los padres del Daycare paguen a tiempo. Ya quiero tener la app para hacer uso de esta función.”</p>
+</p>
+              </div>
+            </div>
+                        <div class="testimonial__slide">
+              <div class="testimonial__content-video">
+                <img class="testimonials-cont__avatar" src=""/>
+              </div>
+
+              <div class="testimonial__content-info">
+                <div class="imgbox">
+                  <img src="img\Heart.svg" alt="Like" />
+                </div>
+                <h3>Juliana de K Learning Daycare</h3>
+                <h4>Proveedora de cuidado infantil</h4>
+                <p><p class="testimonials-cont__message">“Estoy muy emocionada por conocer todo lo que trae Acuarela App para mi Daycare. Siento que va a ser de gran ayuda</p>
+<p>para poder organizarme más fácilmente.»</p>
+</p>
+              </div>
+            </div>
+                      </div>
+        </div>
+
+        <img src="img\Flecha_derecha.png" alt="Desplazar testimonios a la derecha" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PREGUNTAS FRECUENTES -->
+  
+<!-- FAQ -->
+<section class="faq" id="faq">
+    <h2>Preguntas frecuentes</h2>
+    <div id="faq-container"></div> <!-- contenedor dinámico -->
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const urls = {
+            preguntas: '/g/getFaqs/',
+        };
+
+        function fetchData(url) {
+            return fetch(url)
+                .then(response => response.ok ? response.json() : Promise.reject(`Error: ${response.status}`))
+                .catch(error => {
+                    console.error(`Error loading ${url}:`, error);
+                    return [];
+                });
+        }
+
+        fetchData(urls.preguntas).then(preguntas => {
+            const container = document.getElementById("faq-container");
+
+            if (container && Array.isArray(preguntas)) {
+                container.innerHTML = preguntas.map((pregunta, index) => `
+                <div class="faq-item" onclick="toggleAccordion('accordion-${index}')" data-toggle="accordion-${index}">
+                    <b class="faq-item__title">${pregunta.title.rendered}</b>
+                    <div class="faq-item__content content">${pregunta.content.rendered}</div>
+                </div>
+                `).join('');
+            }
+        });
+    });
+</script>
+
+<!-- 
+         <section class="add-on add-on--left">
+      <img class="add-on__img" src="https://acuarelaadmin.acuarela.app/wp-content/uploads/2025/05/add-on1.png" />
+      <div class="add-on__texts">
+        <h2 class="add-on__title">
+          Cobros automáticos y Payrolls fáciles&#8230;        </h2>
+        <p class="add-on__description">
+        <p>Nuestro sistema de pagos automáticos está listo para facilitar los cobros semanales de tu servicio a los padres de familia que son parte de tu Daycare, además, Acuarela te permite hacer gestión de tus gastos diarios y el pago periódico a los asistentes que te ayudan con el cuidado de niños en tu negocio.</p>
+        </p>
+        <button
+          class="btn btn--primary"
+          onclick="window.location.href='/planes-precios'"
+        >
+          <span class="btn__text"> Ver planes y precios </span>
+        </button>
+      </div>
+    </section>
+             <section class="add-on">
+      <div class="add-on__texts">
+        <h2 class="add-on__title">
+          Llega a más clientes sin más esfuerzo        </h2>
+        <p class="add-on__description">
+        <p>Los daycares que usan Acuarela , son parte de nuestra red de Daycares, en la cual padres de familia de tu región pueden conocer tu servicio, instalaciones y atractivos. Esta red no tiene costo adicional y se convertirá en una importante fuente de clientes potenciales para que hagas crecer tu negocio desde el día uno.</p>
+        </p>
+        <button
+          class="btn btn--primary"
+          onclick="window.location.href='/planes-precios'"
+        >
+          <span class="btn__text"> Ver planes y precios </span>
+        </button>
+      </div>
+      <img class="add-on__img" src="https://acuarelaadmin.acuarela.app/wp-content/uploads/2025/05/add-on2.png" />
+    </section>
+             <section class="add-on add-on--left">
+      <img class="add-on__img" src="https://acuarelaadmin.acuarela.app/wp-content/uploads/2025/05/add-on3.png" />
+      <div class="add-on__texts">
+        <h2 class="add-on__title">
+          Funciones que te permiten dedicar más tiempo a cuidar y menos a administrar&#8230;        </h2>
+        <p class="add-on__description">
+        <p>El control de eventos, contratos, documentación, asistentes, fichas de salud, gestión de ingresos / gastos, entre otras 40 funciones de administración, te permitirán tener control de tu daycare fácilmente, y dedicarte la mayoría de tu tiempo al cuidado del futuro del mundo: los niños.</p>
+<p>Con una inversión mínima y pocos conocimientos de internet, tendrás al alcance de tu tablet un sinnúmero de herramientas que llevarán tu Daycare a otro nivel.</p>
+        </p>
+        <button
+          class="btn btn--primary"
+          onclick="window.location.href='/planes-precios'"
+        >
+          <span class="btn__text"> Ver planes y precios </span>
+        </button>
+      </div>
+    </section>
+       -->
+</main>
+  <footer class="footer">
+    <div class="footer__over over">
+      <div class="over__texts">
+        <h1>¿Ya eres parte de Acuarela?</h1>
+      </div>
+      <div class="over__buttons">
+        <div>
+          <h4>Descarga la app para Daycares</h4>
+          <button class="btn btn--white btn--big" onclick="trackDownload('appStore')">
+            <a href="https://apps.apple.com/us/app/acuarela-for-daycares/id1573321954" target="_blank">
+              <img src="img/appStore_available.svg" />
+            </a>
+          </button>
+          <button class="btn btn--white btn--big" onclick="trackDownload('playstore')" target="_blank">
+            <a href="https://play.google.com/store/apps/details?id=com.acuarela.daycaresapp">
+              <img src="img/playStore_available.svg" />
+            </a>
+
+          </button>
+        </div>
+        <!--<div>
+              <h4>Descarga la app para padres</h4>
+              <button class="btn btn--white btn--big">
+                <img src="img/appStore_available.svg" />
+              </button>
+              <button class="btn btn--white btn--big">
+                <img src="img/playStore_available.svg" />
+              </button>
+            </div>!-->
+      </div>
+    </div>
+    <div class="footer__body">
+      <div>
+        <img class="footer__logo" src="img/logo_w.svg" alt="Acuarela" />
+        <div class="footer__info">
+          <h4>Acuarela</h4>
+          <ul class="footer__address">
+            <li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6801060e0728090b1d091a0d040946091818">[email&#160;protected]</a></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <nav class="footer__nav">
+          <a href="/">Acuarela</a>
+          <a href="sobre-nosotros">Nosotros</a>
+          <a href="planes-precios">Planes y Precios</a>
+          <a href="preguntas-frecuentes">Preguntas Frecuentes</a>
+        </nav>
+        <div class="footer__social social">
+          <h4>Síguenos en redes sociales</h4>
+          <div class="social__logos">
+            <a href="https://web.facebook.com/Acuarela-App-106811688249671?_rdc=1&_rdr" target="_blank">
+              <img src="img/facebook-icon.png" class="active"></img>
+              <img src="img/hover-facebook.png" class="hover"></img>
+            </a>
+            <a href="https://www.instagram.com/acuarela.app/" target="_blank">
+              <img src="img/instagram.svg" class="active"></img>
+              <img src="img/instagramy.svg" class="hover"></img>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© Acuarela</span>
+      <a href="/politicas">Privacidad, términos y condiciones</a>
+    </div>
+  </footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/additional-methods.min.js"></script>
+
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+<!-- <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script> -->
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<!-- <script src="js/main.js"></script> -->
+<script src="js/main.js?v=1767810788"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script><!--Librería para personalizar alertas -->
+
+<!--Javascript file for carousel and burger menu settings-->
+<script src="js/app.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"9d9c46cd99e749bcafbca5e729b00e5c","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+
+</html>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
