@@ -2,6 +2,8 @@
 
 Sitio web corporativo de Acuarela - Plataforma de gestión para Daycares.
 
+**Sitio en Producción:** https://acuarela.app/
+
 ## 📋 Requisitos Previos
 
 - Docker Desktop instalado
@@ -87,91 +89,27 @@ docker-compose exec acuarela-web cat /var/log/apache2/error.log
 docker-compose exec acuarela-web ls -la /var/www/html/
 ```
 
-## 🌐 Acceso al Sitio
+## 🌐 URLs
 
-Una vez iniciado el contenedor, el sitio está disponible en:
-- **URL Local:** http://localhost:8080
+- **Producción:** https://acuarela.app/
+- **Local:** http://localhost:8080
 - **API WordPress:** https://acuarelaadmin.acuarela.app/wp-json/wp/v2/
 
-## 📁 Estructura del Proyecto
+## 📁 Estructura Principal
 
 ```
 acuarela-web-page/
-├── Dockerfile              # Configuración de la imagen Docker
+├── Dockerfile              # Configuración Docker
 ├── docker-compose.yml      # Orquestación del contenedor
-├── apache-config.conf      # Configuración personalizada de Apache
-├── .htaccess              # Reglas de Apache y URLs amigables
-├── css/                   # Archivos de estilos
-│   ├── styles.css         # Estilos principales
-│   ├── fonts.css          # Fuentes
-│   ├── normalize.css      # Reset CSS
-│   └── glider.css         # Slider
-├── js/                    # Scripts JavaScript
-├── img/                   # Imágenes y recursos
-├── includes/              # Archivos PHP incluidos
-│   ├── config.php         # Configuración
-│   ├── functions.php      # Funciones PHP
-│   ├── head.php           # Head HTML
-│   ├── header.php         # Header del sitio
-│   └── footer.php         # Footer del sitio
+├── apache-config.conf      # Configuración Apache
+├── .htaccess              # URLs amigables
+├── css/                   # Estilos
+├── js/                    # Scripts
+├── img/                   # Imágenes
+├── includes/              # PHP incluidos (config, functions, header, footer)
 ├── get/                   # APIs GET
 ├── set/                   # APIs POST
 └── index.php              # Página principal
-```
-
-## 🔍 Solución de Problemas
-
-### El CSS no se carga correctamente
-
-1. **Verifica que el archivo CSS sea el correcto:**
-```bash
-# Descargar CSS de producción
-Invoke-WebRequest -Uri "https://acuarela.app/css/styles.css" -UseBasicParsing -OutFile "css/styles.css"
-```
-
-2. **Limpia el caché del navegador:**
-   - Presiona `Ctrl + Shift + R` (hard reload)
-   - O abre en modo incógnito: `Ctrl + Shift + N`
-
-3. **Reinicia el contenedor:**
-```bash
-docker-compose restart acuarela-web
-```
-
-### Error: "Port 8080 already in use"
-
-Cambia el puerto en `docker-compose.yml`:
-```yaml
-ports:
-  - "8081:80"  # Cambia 8080 por otro puerto disponible
-```
-
-### Problemas de Permisos
-
-Si hay errores de permisos en archivos:
-```bash
-docker-compose exec acuarela-web chown -R www-data:www-data /var/www/html
-docker-compose exec acuarela-web chmod -R 755 /var/www/html
-```
-
-### Ver Errores de PHP
-
-Los logs de PHP se encuentran en:
-```bash
-docker-compose exec acuarela-web tail -f /var/log/apache2/error.log
-```
-
-### El contenedor no inicia
-
-1. Verifica que Docker Desktop esté corriendo
-2. Revisa los logs:
-```bash
-docker-compose logs acuarela-web
-```
-3. Reconstruye la imagen:
-```bash
-docker-compose down
-docker-compose up -d --build
 ```
 
 ## 🔄 Sincronización con Producción
@@ -233,3 +171,21 @@ Para problemas o preguntas:
 ## 📄 Licencia
 
 © Acuarela - Professional Child Care Training INC
+l CMS WordPress:
+```
+https://acuarelaadmin.acuarela.app/wp-json/wp/v2/
+```
+
+Para actualizar archivos desde producción:
+```powershell
+# Descargar CSS actualizado
+Invoke-WebRequest -Uri "https://acuarela.app/css/styles.css" -UseBasicParsing -OutFile "css/styles.css"
+docker-compose restart acuarela-web
+```
+
+## 📝 Notas de Desarrollo
+
+- Los archivos son montados como volumen (hot-reload automático)
+- Cambios en PHP/CSS/JS se reflejan al recargar el navegador
+- Para cambios en Apache, reinicia el contenedor
+- Limpia caché del navegador con `Ctrl + Shift + R
